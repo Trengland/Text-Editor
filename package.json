@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "nodemon server.js",
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd Develop/client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,9 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
+
