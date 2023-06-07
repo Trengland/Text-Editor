@@ -19,6 +19,7 @@
     "workbox-window": "^5.1.4"
   },
   "devDependencies": {
+    "babel-loader": "^9.1.2",
     "concurrently": "^5.2.0",
     "css-minimizer-webpack-plugin": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
