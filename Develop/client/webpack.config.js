@@ -1,26 +1,26 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { InjectManifest } = require('workbox-webpack-plugin');
-const path = require('path');
 
-module.exports = () => {
-  const isProduction = process.env.NODE_ENV === 'production';
+module.exports = (env, options) => {
+  const isProduction = options.mode === 'production';
 
   return {
-    mode: isProduction ? 'production' : 'development',
+    mode: options.mode,
     entry: {
-      main: './src/js/index.js',
-      install: './src/js/install.js',
+      main: './Develop/client/src/js/index.js',
+      install: './Develop/client/src/js/install.js',
     },
     output: {
       filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'Develop/client/dist'),
     },
     devtool: isProduction ? false : 'eval-source-map',
     devServer: {
-      contentBase: './dist',
+      contentBase: './Develop/client/dist',
       hot: true,
     },
     optimization: {
@@ -58,6 +58,13 @@ module.exports = () => {
         },
       ],
     },
+    resolve: {
+      extensions: ['.js'],
+      alias: {
+        src: path.resolve(__dirname, 'Develop/client/src'),
+      },
+      modules: ['node_modules'],
+    },    
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
@@ -73,4 +80,3 @@ module.exports = () => {
     ],
   };
 };
-
