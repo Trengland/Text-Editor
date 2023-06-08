@@ -2,7 +2,7 @@
   "name": "JATE",
   "version": "1.0.0",
   "description": "",
-  "main": "Develop/server.js",
+  "main": "./Develop/server/server.js",
   "scripts": {
     "start:dev": "nodemon server.js",
     "start": "node server.js",
