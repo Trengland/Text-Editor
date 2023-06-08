@@ -1,7 +1,8 @@
-# JATE - JavaScript Browser Text Editor
+# JATE (Just Another Text Editor)
+## JavaScript Browser Text Editor
 
 ## Overview
-JATE (JavaScript Browser Text Editor) is a single-page application that serves as a text editor running in the browser. It meets the criteria of a Progressive Web Application (PWA) and incorporates various data persistence techniques for redundancy and offline functionality. This project utilizes the IndexedDB database and the idb package, which is a lightweight wrapper around the IndexedDB API.
+JATE is a single-page application that serves as a text editor running in the browser. It meets the criteria of a Progressive Web Application (PWA) and incorporates various data persistence techniques for redundancy and offline functionality. This project utilizes the IndexedDB database and the idb package, which is a lightweight wrapper around the IndexedDB API.
 
 ## Features
 - Create, edit, and save text documents directly in the browser
