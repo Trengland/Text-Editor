@@ -19,8 +19,8 @@ JATE (JavaScript Browser Text Editor) is a single-page application that serves a
 ## Getting Started
 To run the JATE text editor locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/jate.git`
-2. Navigate to the project directory: `cd jate`
+1. Clone the repository: `https://github.com/Trengland/Text-Editor`
+2. Navigate to the project directory: `cd <your projects main directory> or Text-Editor`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run start:dev`
 5. Open your browser and visit: `http://localhost:3000`
