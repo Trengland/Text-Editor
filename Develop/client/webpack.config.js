@@ -11,9 +11,9 @@ module.exports = (env, options) => {
   return {
     mode: options.mode,
     entry: {
-      main: './Develop/client/src/js/index.js',
-      install: './Develop/client/src/js/install.js',
-    },
+      main: './src/js/index.js',
+      install: './src/js/install.js',
+    },    
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'Develop/client/dist'),
